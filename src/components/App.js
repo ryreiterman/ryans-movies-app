@@ -54,8 +54,8 @@ export default function App(props) {
 	};
 
 	return (
-		<div className="Page-wrapper">
-			<h1>Movie App</h1>
+		<div className="page-wrapper">
+			<h1 className="page-title">Ryan's Movie Review App</h1>
 			<form onSubmit={handleSubmit}>
 				<input
 					id="title"
@@ -63,7 +63,7 @@ export default function App(props) {
 					value={query.title}
 					onChange={handleChange}
 				/>
-				<input type="submit" value="Find Movie Info" />
+				<input type="submit" value="Find Movies" />
 			</form>
 			<div className={'Page'}>
 				{Object.keys(movie).length ? <MovieInfo movie={movie} /> : ''}
